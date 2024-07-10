@@ -1,25 +1,26 @@
 /* CSS Document */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body, html {
-    position:relative;
+body,
+html {
+    position: relative;
     width: 100%
 }
 
 .icon {
-    position:fixed;
+    position: fixed;
     bottom: 65px;
     right: 30px;
     font-size: 30px;
-    background-color:#01e675;
+    background-color: #01e675;
     color: #fff;
     border-radius: 50%;
     padding: 10px;
-    width:50px;
+    width: 50px;
     height: 50px;
     text-align: center;
     text-decoration: none;
@@ -27,9 +28,7 @@ body, html {
     box-shadow: 2px 2px 2px #c0bdbd;
 }
 
-a.icon
-
-.icon:hover {
+a.icon .icon:hover {
     background-color: #fff;
     color: #029e3b;
     font-weight: 900;
@@ -39,12 +38,33 @@ a.icon
 .content-1 {
     width: 100%;
     height: 90vh;
-    background-color: #72dda7 ;
+    background-color: #72dda7;
     margin-bottom: 40px;
 }
 
-.content-2{
+.content-2 {
     width: 100%;
     height: 90vh;
-    background-color: #004d26;   
+    background-color: #004d26;
+}
+
+/* Estilo da imagem dentro do link */
+.icon {
+    transition: transform 0.3s ease-in-out;
+    animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Animação para o efeito de pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
